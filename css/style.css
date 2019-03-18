@@ -1,0 +1,55 @@
+ .square{
+     width:400px;
+     height:600px;
+     float:left;
+ }
+ .title{
+     font-size:30px;
+     margin:20px auto;
+     text-align:center;
+ }
+ .game{/*20行10列的区域，每个小块是20*20的 */
+    width:200px;
+    height:400px;
+    background-color: antiquewhite;
+    border-left:1px solid burlywood;
+    border-right:1px solid burlywood;
+    border-bottom:1px solid burlywood;
+    position:relative; 
+    float:left;
+}
+ .next{/*4行4列的区域 */
+    width:80px;
+    height:80px;
+    background-color: antiquewhite;
+    position:relative;
+    border:1px solid burlywood;
+    float:left;
+    margin-left:40px;
+}
+/*显示信息*/
+.info{
+    float:left;
+    margin-left:20px;
+    margin-top:10px;
+}
+.none,.current,.done{
+    width:20px;
+    height:20px;
+    position:absolute;
+    box-sizing: border-box;
+}
+/*没有方块的区域*/
+.none{
+    background-color:antiquewhite; 
+}
+/*用户正在操作的方块*/
+.current{
+    background-color: bisque;
+    border:1px solid red;
+}
+/*已经落下来的方块*/
+.done{
+    background-color: gray;
+    border: 1px solid black;
+}
